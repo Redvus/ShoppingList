@@ -8,7 +8,7 @@ import java.lang.RuntimeException
 
 object ShoplistRepositoryImpl: ShopListRepository {
 
-    private val shopListLD = MutableLiveData<List<ShopItem>>()
+    private val shopListID = MutableLiveData<List<ShopItem>>()
     private val shopList = mutableListOf<ShopItem>()
     private var autoIncrementId = 0
 
@@ -45,11 +45,11 @@ object ShoplistRepositoryImpl: ShopListRepository {
     }
 
     override fun getShopList(): LiveData<List<ShopItem>> {
-        return shopListLD
+        return shopListID
     }
 
     private fun updateList() {
-        shopListLD.value = shopList.toList()
+        shopListID.value = shopList.toList()
     }
 
 }

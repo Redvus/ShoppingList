@@ -1,7 +1,7 @@
 package com.redvus.shoppinglist.presentation
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
+// import androidx.lifecycle.LiveData
+// import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.redvus.shoppinglist.data.ShoplistRepositoryImpl
 import com.redvus.shoppinglist.domain.DeleteShopItemUseCase
